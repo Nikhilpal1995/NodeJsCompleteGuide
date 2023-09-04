@@ -14,4 +14,4 @@ const studnt = {
     
 };
 
-studnt.greet()
+studnt.greet();

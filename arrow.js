@@ -5,13 +5,13 @@ console.log(prod1(2,3));
 
 //create a student object
 
-const studnt {
-    name: Nikhil
-    age: 28
-    const greet{
-        "Hi, my name is " + this.name + "my age is " + this.age;
+const studnt = {
+    name: "Nikhil",
+    age: 28,
+    greet() {
+        console.log("Hi, my name is " + this.name + ". my age is " + this.age);
     }
-    greet;
-}
+    
+};
 
-console.log(studnt);
+studnt.greet()

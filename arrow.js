@@ -1,7 +1,7 @@
 //arrow function which returns the product of two numbers
-const prod1 = (a,b) => a*b;
+//const prod1 = (a,b) => a*b;
 
-console.log(prod1(2,3));
+//console.log(prod1(2,3));
 
 //create a student object
 
@@ -14,4 +14,17 @@ const studnt = {
     
 };
 
-studnt.greet();
+//SPREAD OPERATOR
+const copyStudnt = {...studnt};
+console.log(copyStudnt);
+
+const arr = ['apple', 'oranges' , ' ', 'mango', ' ' , 'lemon'];
+const arr1 = [...arr];
+console.log(arr1);
+
+//REST OPERATOR
+const toArray = (...args) => {
+    return args;
+};
+
+console.log(toArray(1, 2, 3, 4));

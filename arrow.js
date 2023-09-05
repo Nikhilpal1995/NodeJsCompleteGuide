@@ -15,16 +15,26 @@ const studnt = {
 };
 
 //SPREAD OPERATOR
-const copyStudnt = {...studnt};
-console.log(copyStudnt);
+//const copyStudnt = {...studnt};
+//console.log(copyStudnt);
 
-const arr = ['apple', 'oranges' , ' ', 'mango', ' ' , 'lemon'];
-const arr1 = [...arr];
-console.log(arr1);
+//const arr = ['apple', 'oranges' , ' ', 'mango', ' ' , 'lemon'];
+//const arr1 = [...arr];
+//console.log(arr1);
 
 //REST OPERATOR
-const toArray = (...args) => {
-    return args;
-};
+//const toArray = (...args) => {
+ //   return args;
+//};
 
-console.log(toArray(1, 2, 3, 4));
+//console.log(toArray(1, 2, 3, 4));
+
+//DESTRUCTOR
+const printName = ({name, age}) => {
+    console.log(name, age);
+}
+
+//printName(studnt);
+
+const { name, age} = studnt;
+console.log(name, age); 
